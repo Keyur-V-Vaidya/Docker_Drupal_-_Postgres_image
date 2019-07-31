@@ -12,6 +12,8 @@ services:
           - drupal-themes:/var/www/html/themes
   postgres:
           image: postgres
+          environment:
+          -POSTGRES_PASSWORD=mypass
       volumes:
         drupal-modules:
         drupal-profiles:
