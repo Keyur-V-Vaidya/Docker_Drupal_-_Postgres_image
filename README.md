@@ -23,5 +23,26 @@ After this command it will show you the steps that how is creating the images an
 Type localhost:8080 in your browser url,
 
 if you see drupal running there, congratulations it's working.
+
+Choose the language
+
+Select Installation profile as needed
+
+Select Database, weare using Postgres.
+
+Database name- postgres
+database username- postgres
+database password- mypass (as stated in docker-compose.yml file)
  
- 
+In advance option change the
+Host part to postgres (it is the name of the service)
+
+Save and Continue
+
+Don't forget to free the resources
+
+type 
+docker-compose down (This command will not delete the volume, by default docker protects the volume)
+if you only need to container to stop
+so now type 
+docker-compose down -v
